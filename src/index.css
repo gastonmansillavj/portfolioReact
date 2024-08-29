@@ -1,0 +1,136 @@
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(58, 252, 32, 0.87);
+  background-color: #5c5a5a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos generales para la barra */
+.cabecera-barra {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente si hay altura */
+  background-color: #4d4e4e;
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea en pantallas más pequeñas */
+ 
+}
+
+/* Estilo para los elementos de la lista */
+.cabecera-barra li {
+  margin: 10px; /* Espaciado alrededor de cada elemento */
+  padding: 10px 15px;
+  cursor: pointer;
+  text-align: center; /* Centra el texto en cada elemento */
+  flex: 1 0 auto; /* Hace que los elementos ocupen espacio disponible y se ajusten según el contenido */
+}
+
+/* Estilo para el hover */
+.cabecera-barra li:hover {
+  background-color: #777879;
+  border-radius: 5px;
+}
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .cabecera-barra {
+      justify-content: space-around; /* Distribuye los elementos de manera uniforme en pantallas pequeñas */
+  }
+  
+  .cabecera-barra li {
+      flex: 1 1 100%; /* Cada elemento ocupará el 100% del ancho disponible en pantallas pequeñas */
+      margin: 5px 0; /* Ajusta el margen verticalmente */
+  }
+}
+/* Estilos para el contenedor que agrupa los componentes Juego */
+.grupo-juegos {
+  display: flex;
+  justify-content: center; /* Centra el grupo de juegos en la página */
+  flex-wrap: wrap; /* Permite que los juegos se muevan a la siguiente línea si no caben en una fila */
+  gap: 2px; /* Espacio entre los componentes Juego */
+  margin: 20px auto; /* Añade margen alrededor del grupo de juegos y lo centra */
+  width: 100%; /* Ocupa el ancho completo disponible */
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  background-color: #777879;
+  border-radius: 15px; /* Ajusta el valor para cambiar el nivel de redondez */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Ajusta el valor para cambiar la sombra */
+}
+
+/* Estilos para el componente Juego */
+.juego-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra la etiqueta h2 y la imagen horizontalmente */
+  text-align: center; /* Centra el texto del h2 */
+  width: 100%; /* Asegura que cada Juego ocupe el 100% de su contenedor */
+  max-width: 300px; /* Limita el ancho máximo del contenedor a 300px */
+  margin: 0 auto; /* Centra cada Juego en su contenedor */
+  
+}
+
+/* Estilos para la imagen dentro del componente Juego */
+.juego-imagen {
+  width: 100%;
+  max-width: 300px; /* Establece el ancho máximo de la imagen */
+  max-height: 200px;
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-top: 10px; /* Añade un margen superior a la imagen */
+  margin-bottom: 10px;
+  border-radius: 15px; /* Ajusta el valor para cambiar el nivel de redondez */
+  box-shadow:0px 0px 15px rgba(0, 0, 0, 0.5); /* Ajusta el valor para cambiar la sombra */
+  transition: transform 0.3s ease; /* Suaviza la transición de agrandamiento */
+}
+.juego-imagen-sobre-nosotros {
+  width: 100%;
+  max-width: 300px; /* Establece el ancho máximo de la imagen */
+  max-height: 320px;
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-top: 10px; /* Añade un margen superior a la imagen */
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 5px black); /* Dibuja la silueta con sombra */
+  
+ 
+}
+.juego-imagen:hover {
+  transform: scale(1.10); /* Agranda la imagen un 5% */
+}
+
+/* Estilos para el contenedor sobre nosotros que debe estar arriba */
+.container-sobre-nosotros {
+  display: flex;
+  justify-content: center; /* Centra el grupo de juegos en la página */
+  flex-wrap: wrap; /* Permite que los juegos se muevan a la siguiente línea si no caben en una fila */
+  gap: 20px; /* Espacio entre los componentes Juego */
+  margin: 20px auto; /* Añade margen alrededor del grupo de juegos y lo centra */
+  width: 100%; /* Ocupa el ancho completo disponible */
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  background-color: #777879;
+  border-radius: 15px; /* Ajusta el valor para cambiar el nivel de redondez */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Ajusta el valor para cambiar la sombra */
+  
+}
+.texto-sobre-nosotros{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra la etiqueta h2 y la imagen horizontalmente */
+  text-align: center; /* Centra el texto del h2 */
+  width: 100%; /* Asegura que cada Juego ocupe el 100% de su contenedor */
+  max-width: 400px; /* Limita el ancho máximo del contenedor a 300px */
+  margin: 0 auto; /* Centra cada Juego en su contenedor */
+  color: rgba(255, 255, 255, 0.87);
+ margin-top: 10px;
+ 
+}
+
